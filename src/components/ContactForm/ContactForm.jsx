@@ -1,21 +1,29 @@
 import React from 'react'
 import './ContactForm.scss'
 
-const ContactForm = () => {
-
+const ContactForm = ({info, setInfo}) => {
+// const {username, phoneNumber, gender} = info
+// console.log(info)
+const handleChange = (e) => {
+  e.preventDefault()
+  // const name = e.target.name
+  // const value= e.target.value
+  const {name, value} = e.target;
+  console.log(name, value)
+}
   return (
     <form className="mt-4 contact-form">
         <div className="mb-3">
-          <label htmlFor="text" className="form-label">Fullname</label>
-          <input type="text" className="form-control" id="text" /> 
+          <label htmlFor="username" className="form-label">Fullname</label>
+          <input onChange={handleChange} name="username" type="text" className="form-control" id="username" /> 
         </div>
         <div className="mb-3">
-          <label htmlFor="phone" className="form-label">Phone Number</label>
-          <input type="text" className="form-control" id="phone" /> 
+          <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+          <input onChange={handleChange} name="phoneNumber" type="text" className="form-control" id="phoneNumber" /> 
         </div>
        <div className="mb-3">
           <label htmlFor="gender" className="form-label">Gender</label>
-          <select className="form-select" aria-label="Please select gender" >
+          <select onChange={handleChange} name="gender" id='gender' className="form-select" aria-label="Please select gender" >
              <option value="male">Male</option>
              <option value="female">Female</option>
              <option value="other">Other</option> 
