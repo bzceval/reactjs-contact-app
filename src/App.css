@@ -1,3 +1,13 @@
-.card{
-  background-color: #ddd8dc;
+.App {
+  background: rgb(123, 116, 163);
+  background: linear-gradient(
+    120deg,
+    rgba(123, 116, 163, 1) 10%,
+    rgba(173, 159, 195, 1) 60%,
+    rgba(213, 198, 215, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
