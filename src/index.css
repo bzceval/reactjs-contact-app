@@ -13,3 +13,7 @@
   align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
+.App h1 {
+  color: #53547d;
+  text-align: center;
+}
