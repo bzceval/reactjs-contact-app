@@ -4,7 +4,7 @@ import './ContactForm.scss'
 const ContactForm = () => {
 
   return (
-    <form className="mt-5 contact-form">
+    <form className="mt-4 contact-form">
         <div className="mb-3">
           <label htmlFor="text" className="form-label">Fullname</label>
           <input type="text" className="form-control" id="text" /> 
