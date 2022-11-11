@@ -1,7 +1,7 @@
 import React from 'react'
 import './ContactForm.scss'
 
-const ContactForm = ({info, setInfo}) => {
+const ContactForm = ({info, setInfo, handleSubmit}) => {
 // const {username, phoneNumber, gender} = info
 // console.log(info)
 const handleChange = (e) => {
@@ -10,20 +10,21 @@ const handleChange = (e) => {
   // const value= e.target.value
   const {name, value} = e.target;
   console.log(name, value)
+  setInfo({...info, [name]:value})
 }
   return (
-    <form className="mt-4 contact-form">
+    <form onSubmit={handleSubmit} className="mt-4 contact-form">
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Fullname</label>
-          <input onChange={handleChange} name="username" type="text" className="form-control" id="username" /> 
+          <input onChange={handleChange} name="username" value={info.username} type="text" className="form-control" id="username" /> 
         </div>
         <div className="mb-3">
           <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
-          <input onChange={handleChange} name="phoneNumber" type="text" className="form-control" id="phoneNumber" /> 
+          <input onChange={handleChange} name="phoneNumber" value={info.phoneNumber} type="text" className="form-control" id="phoneNumber" /> 
         </div>
        <div className="mb-3">
           <label htmlFor="gender" className="form-label">Gender</label>
-          <select onChange={handleChange} name="gender" id='gender' className="form-select" aria-label="Please select gender" >
+          <select onChange={handleChange} name="gender" value={info.phoneGender} id='gender' className="form-select" aria-label="Please select gender" >
              <option value="male">Male</option>
              <option value="female">Female</option>
              <option value="other">Other</option> 
