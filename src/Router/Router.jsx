@@ -10,6 +10,7 @@ import Sidebar from '../components/Sidebar/Sidebar'
 
 const Router = () => {
   return (
+    <div className="router">
     <BrowserRouter>
     <Sidebar />
         <Routes>
@@ -21,6 +22,7 @@ const Router = () => {
             <Route path="/profile" element={<Profile/>} />
         </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 
