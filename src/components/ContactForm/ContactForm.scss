@@ -4,8 +4,7 @@
         font-weight: 800;
         text-transform: uppercase;  
     }
-    input {
-        font-size: 14px; 
+    input {  
         outline-style: none !important;
         box-shadow: 2px 2px 3px #5d5c5d8e;
         border: none;
@@ -18,8 +17,7 @@
         } 
     }
 
-    select {
-        font-size: 14px;
+    select { 
         box-shadow: 2px 2px 3px #5d5c5d8e;
         border: none;
         &:hover { 
