@@ -6,6 +6,7 @@ import { useUser, DeleteUser } from "../../utils/firebaseFunctions";
 import { MdDelete } from "react-icons/md";
 import { RiEdit2Fill } from "react-icons/ri";
 import NoFetched from '../NoFetched/NoFetched'
+import Modal from "../Modal/Modal"
 
 const List = ({ editUser }) => {
 
@@ -51,10 +52,7 @@ const List = ({ editUser }) => {
           ))
         )}
       </div>
-      <div>
-        
-        
-      </div>
+      <Modal/>   
     </div>
   );
 };
