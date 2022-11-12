@@ -1,14 +1,16 @@
 import React, {useState} from "react";
 import ContactForm from '../components/ContactForm/ContactForm'
-// const initialValues = {username:"", phoneNumber:"", gender:""}
 import {AddUser} from '../utils/firebaseFunctions'
 
+const initialValues = {username:"", phoneNumber:"", gender:""}
+
 const AddContact = () => {
-const [info, setInfo] = useState({username:"", phoneNumber:"", gender:""}) 
+const [info, setInfo] = useState(initialValues) 
 
 const handleSubmit = (e) => {
   e.preventDefault()
   AddUser(info)
+  setInfo(initialValues);
 }
 
   return (
