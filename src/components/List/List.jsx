@@ -5,6 +5,7 @@ import Man from "../../assets/man.png";
 import { useUser, DeleteUser } from "../../utils/firebaseFunctions";
 import { MdDelete } from 'react-icons/md';
 import { RiEdit2Fill } from 'react-icons/ri';
+import Loading from "../Loading/Loading";
 
 const List = ({editUser}) => {
   const { isLoading, contactList } = useUser(); 
@@ -12,7 +13,7 @@ const List = ({editUser}) => {
     <div className="contact-list p-3">
       <div className="container">
         {isLoading
-          ? "Loading"
+          ? <Loading/>
           : contactList?.length === 0
           ? "No Data Fetched"
           : contactList?.map((item, id) => (
