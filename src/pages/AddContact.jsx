@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import ContactForm from '../components/ContactForm/ContactForm'
 import {AddUser} from '../utils/firebaseFunctions'
-import { AuthContext } from '../context/AuthContext'
+import { AuthContext } from '../context/ContextProvider'
 
 // const initialValues = {username:"", phoneNumber:"", gender:""}
 

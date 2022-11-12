@@ -4,7 +4,7 @@ import { createContext } from 'react';
 export const AuthContext = createContext(); 
 const initialValues = {username:"", phoneNumber:"", gender:""}
 
-const AuthContextProvider = ({ children }) => {
+const ContextProvider = ({ children }) => {
     const [info, setInfo] = useState(initialValues) 
 
   return (
@@ -14,4 +14,4 @@ const AuthContextProvider = ({ children }) => {
   );
 };
 
-export default AuthContextProvider;
+export default ContextProvider;

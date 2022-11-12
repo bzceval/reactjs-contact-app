@@ -8,7 +8,9 @@ import { RiEdit2Fill } from "react-icons/ri";
 import NoFetched from '../NoFetched/NoFetched'
 
 const List = ({ editUser }) => {
+
   const { isLoading, contactList } = useUser();
+
   return (
     <div className="contact-list p-3">
       <div className="container">
@@ -40,17 +42,7 @@ const List = ({ editUser }) => {
                         onClick={() => DeleteUser(item.id)}
                         className="me-2 delete"
                       />
-                      <RiEdit2Fill
-                        onClick={() =>
-                          editUser(
-                            item.id,
-                            item.username,
-                            item.phoneNumber,
-                            item.gender
-                          )
-                        }
-                        className="edit"
-                      />
+                      <RiEdit2Fill onClick={() => editUser( item.id, item.username, item.phoneNumber, item.gender )} className="edit"  />
                     </div>
                   </div>
                 </div>
@@ -58,6 +50,10 @@ const List = ({ editUser }) => {
             </div>
           ))
         )}
+      </div>
+      <div>
+        
+        
       </div>
     </div>
   );

@@ -1,18 +1,18 @@
 import "./App.scss";
 import Home from "./pages/Home";
 import Router from "./Router/Router";
-import AuthContextProvider from './context/AuthContext';
+import ContextProvider from './context/ContextProvider';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         <div className="card">
-        <AuthContextProvider>
+        <ContextProvider>
           <Router>
             <Home />
           </Router>
-          </AuthContextProvider>
+          </ContextProvider>
         </div>
       </div>
     </div>
