@@ -15,4 +15,13 @@
         display: flex;
         justify-content: center !important;
     }
+    button p { 
+        font-weight: 700;
+        font-size: 12px;
+        color: #53547d;
+        margin-top: 8px;
+        &:hover {
+            color: #ad9fc3;
+        }
+    }
 }

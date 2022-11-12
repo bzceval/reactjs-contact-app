@@ -14,7 +14,7 @@ const handleSubmit = (e) => {
   return (
     <div className="add-contact-container p-5">
       <div className="container">
-        <h1>Add Contact</h1>
+        <h2 className="text-start border-bottom">Add Contact</h2>
         <ContactForm info={info} setInfo={setInfo} handleSubmit={handleSubmit} />
       </div>
     </div>

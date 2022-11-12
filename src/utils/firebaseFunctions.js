@@ -1,6 +1,6 @@
 // Data Reading and Writing in Firebase DB
 import firebase from "./firebase";
-import { getDatabase, ref, push, set, onValue } from "firebase/database";
+import { getDatabase, ref, push, set, onValue, remove } from "firebase/database";
 import { useEffect, useState } from "react";
 
 //create new user
@@ -11,7 +11,7 @@ export const AddUser = (info) => {
   set(newUserRef, {
     username: info.username,
     phoneNumber: info.phoneNumber,
-    gender: info.gender,
+    gender: info.gender, 
   });
 };
 
@@ -34,4 +34,11 @@ export const useUser=()=>{
      })
  },[])
  return {isLoading,contactList}
+}
+
+//delete user
+export const DeleteUser=(id)=>{
+  const db = getDatabase(firebase);
+  remove(ref(db,"users/"+id));
+  alert("Deleted Successfully")
 }

@@ -12,4 +12,18 @@
   h5 {
     color: #53547d;
   } 
+  .edit {
+    cursor: pointer; 
+    color: #53547d;
+    &:hover {
+      color: #463c6b !important;
+    }
+  }
+  .delete {
+    cursor: pointer;
+    color: #53547d;
+    &:hover {
+      color: #bc4749 !important;
+    }
+  }
 }
