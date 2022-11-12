@@ -1,16 +1,18 @@
-import React, {useState} from "react";
+import React, {useContext} from "react";
 import ContactForm from '../components/ContactForm/ContactForm'
 import {AddUser} from '../utils/firebaseFunctions'
+import { AuthContext } from '../context/AuthContext'
 
-const initialValues = {username:"", phoneNumber:"", gender:""}
+// const initialValues = {username:"", phoneNumber:"", gender:""}
 
 const AddContact = () => {
-const [info, setInfo] = useState(initialValues) 
+// const [info, setInfo] = useState(initialValues) 
+const { info, setInfo } = useContext(AuthContext);
 
 const handleSubmit = (e) => {
   e.preventDefault()
   AddUser(info)
-  setInfo(initialValues);
+  setInfo({username:"", phoneNumber:"", gender:""});
 }
 
   return (
