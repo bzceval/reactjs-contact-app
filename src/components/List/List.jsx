@@ -27,8 +27,7 @@ const List = ({editUser}) => {
                     <div className="opacity-10 text-nowrap">
                       <div className="d-flex">
                       <MdDelete onClick={()=>DeleteUser(item.id)} className="me-2 delete" />
-                      <RiEdit2Fill onClick={()=>editUser(
-                      item.id, item.username,item.phoneNumber,item.gender)} className="edit" />
+                      <RiEdit2Fill onClick={()=>editUser(item.id, item.username,item.phoneNumber,item.gender)} className="edit" />
                       </div>
                     </div>
                   </div>
