@@ -6,7 +6,7 @@ import { useUser, DeleteUser } from "../../utils/firebaseFunctions";
 import { MdDelete } from 'react-icons/md';
 import { RiEdit2Fill } from 'react-icons/ri';
 
-const List = () => {
+const List = ({editUser}) => {
   const { isLoading, contactList } = useUser(); 
   return (
     <div className="contact-list p-3">
@@ -27,7 +27,8 @@ const List = () => {
                     <div className="opacity-10 text-nowrap">
                       <div className="d-flex">
                       <MdDelete onClick={()=>DeleteUser(item.id)} className="me-2 delete" />
-                      <RiEdit2Fill className="edit" />
+                      <RiEdit2Fill onClick={()=>editUser(
+                      item.id, item.username,item.phoneNumber,item.gender)} className="edit" />
                       </div>
                     </div>
                   </div>
