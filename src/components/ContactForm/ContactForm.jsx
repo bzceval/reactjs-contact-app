@@ -24,7 +24,7 @@ const handleChange = (e) => {
         </div>
        <div className="mb-3">
           <label htmlFor="gender" className="form-label">Gender</label>
-          <select onChange={handleChange} name="gender" value={info.phoneGender} id='gender' className="form-select" aria-label="Please select gender" >
+          <select onChange={handleChange} name="gender" value={info.gender} id='gender' className="form-select" aria-label="Please select gender" >
              <option value="male">Male</option>
              <option value="female">Female</option>
              <option value="other">Other</option> 

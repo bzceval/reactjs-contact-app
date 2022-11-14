@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./List.scss";
 import Girl from "../../assets/girl.png";
 import Man from "../../assets/man.png";
@@ -9,11 +9,13 @@ import NoFetched from '../NoFetched/NoFetched'
 import Modal from "../Modal/Modal"
 
 const List = ({ editUser }) => {
-
-  const { isLoading, contactList } = useUser();
+  const [showModal, setShowModal] = useState() 
+  
+  const { isLoading, contactList } = useUser(false);
+  
 
   return (
-    <div className="contact-list p-3">
+    <div className="contact-list p-3">  
       <div className="container">
         {isLoading ? (
           <div className="d-flex justify-content-center">
@@ -24,8 +26,8 @@ const List = ({ editUser }) => {
         ) : contactList?.length === 0 ?(
           <NoFetched />
         ) : (
-          contactList?.map((item, id) => (
-            <div className="list-group w-auto mb-3">
+          contactList?.map((item) => (
+            <div key={item.id} className="list-group w-auto mb-3">
               <div className="list-group-item list-group-item-action d-flex gap-3 py-3">
                 {item.gender === "female" ? (
                   <img src={Girl} alt="profile" width={50} height={50} />
@@ -43,17 +45,22 @@ const List = ({ editUser }) => {
                         onClick={() => DeleteUser(item.id)}
                         className="me-2 delete"
                       />
-                      <RiEdit2Fill onClick={() => editUser( item.id, item.username, item.phoneNumber, item.gender )} className="edit"  />
+                      <RiEdit2Fill className="edit" onClick={()=>setShowModal("active")} /> 
                     </div>
                   </div>
                 </div>
               </div>
+
+             <div className={`modal-container ${showModal}`}>
+                <Modal showModal={showModal} setShowModal={setShowModal}/>
+              </div>
+              
             </div>
           ))
         )}
+    
       </div>
-      <Modal/>   
-    </div>
+      </div> 
   );
 };
 

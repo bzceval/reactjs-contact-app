@@ -1,4 +1,25 @@
-.modal {
-    background-color: aqua !important;
-    z-index: 1000 !important;
-}
+.modal-container.active {  
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    // visibility: hidden;
+    .modal-body {
+        background-color: #285a57;
+        text-align: center;
+        padding: 30px 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 500px;
+        max-width: 100%;
+        font-size: 1.5rem;
+      }
+} 
+
