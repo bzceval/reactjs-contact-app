@@ -8,7 +8,27 @@ const Modal = ({setShowModal, showModal}) => {
       <div className="modal-container">
         <div className="modal-body">
           <button className="btn btn-light" onClick={()=> setShowModal("")}>X</button>
-           <p>Say Hi</p>
+            <form className="mt-4 contact-form">
+              <div className="mb-3">
+                <label htmlFor="username" className="form-label">Fullname</label>
+                <input name="username" value={null} type="text" className="form-control" id="username" /> 
+              </div>
+              <div className="mb-3">
+                <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+                <input name="phoneNumber" value={null} type="text" className="form-control" id="phoneNumber" /> 
+              </div>
+              <div className="mb-3">
+                  <label htmlFor="gender" className="form-label">Gender</label>
+                  <select name="gender" value={null} id='gender' className="form-select" aria-label="Please select gender" >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option> 
+                  </select>
+              </div>
+              <div className="mb-3 d-grid mt-4">
+              <button type="submit" className="btn btn-primary"> Add Contact </button>
+              </div>
+            </form>
         </div>  
       </div> 
   );

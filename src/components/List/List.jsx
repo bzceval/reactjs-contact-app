@@ -49,17 +49,14 @@ const List = ({ editUser }) => {
                     </div>
                   </div>
                 </div>
-              </div>
-
-             <div className={`modal-container ${showModal}`}>
-                <Modal showModal={showModal} setShowModal={setShowModal}/>
-              </div>
-              
+              </div>              
             </div>
           ))
         )}
-    
       </div>
+        <div className={`modal-container ${showModal}`}>
+            <Modal showModal={showModal} setShowModal={setShowModal}/>
+        </div>
       </div> 
   );
 };
