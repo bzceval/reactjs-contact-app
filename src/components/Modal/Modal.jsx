@@ -8,7 +8,7 @@ const Modal = ({setShowModal, showModal}) => {
       <div className="modal-container">
         <div className="modal-body">
           <button className="btn btn-light" onClick={()=> setShowModal("")}>X</button>
-            <form className="mt-4 contact-form">
+            <form className="mt-4 update-form">
               <div className="mb-3">
                 <label htmlFor="username" className="form-label">Fullname</label>
                 <input name="username" value={null} type="text" className="form-control" id="username" /> 
@@ -26,7 +26,7 @@ const Modal = ({setShowModal, showModal}) => {
                   </select>
               </div>
               <div className="mb-3 d-grid mt-4">
-              <button type="submit" className="btn btn-primary"> Add Contact </button>
+              <button type="submit" className="btn btn-outline-light"> Add Contact </button>
               </div>
             </form>
         </div>  
