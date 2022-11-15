@@ -8,12 +8,17 @@ import { RiEdit2Fill } from "react-icons/ri";
 import NoFetched from '../NoFetched/NoFetched'
 import Modal from "../Modal/Modal"
 
-const List = ({ editUser }) => {
+const List = () => {
   const [showModal, setShowModal] = useState() 
-  
+  const [editItem, seteditItem] = useState()
   const { isLoading, contactList } = useUser(false);
-  
 
+  const handleEdit = (id, username, phoneNumber, gender) => {
+    setShowModal("active")
+    seteditItem({id, username, phoneNumber, gender})
+  }
+// console.log(editItem)
+  
   return (
     <div className="contact-list p-3">  
       <div className="container">
@@ -45,7 +50,7 @@ const List = ({ editUser }) => {
                         onClick={() => DeleteUser(item.id)}
                         className="me-2 delete"
                       />
-                      <RiEdit2Fill className="edit" onClick={()=>setShowModal("active")} /> 
+                      <RiEdit2Fill className="edit" onClick={()=>handleEdit(item?.id, item?.username, item?.phoneNumber, item?.gender)} /> 
                     </div>
                   </div>
                 </div>
@@ -55,7 +60,7 @@ const List = ({ editUser }) => {
         )}
       </div>
         <div className={`modal-container ${showModal}`}>
-            <Modal showModal={showModal} setShowModal={setShowModal}/>
+            <Modal seteditItem={seteditItem} editItem={editItem} showModal={showModal} setShowModal={setShowModal}/>
         </div>
       </div> 
   );
