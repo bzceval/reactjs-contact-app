@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { createContext } from 'react'; 
 
-export const AuthContext = createContext(); 
+export const InfoContext = createContext(); 
+
 const initialValues = {username:"", phoneNumber:"", gender:""}
 
 const ContextProvider = ({ children }) => {
     const [info, setInfo] = useState(initialValues) 
+    const [user, userName] = useState()
 
   return (
-    <AuthContext.Provider value={{ info, setInfo }}>
+    <InfoContext.Provider value={{ info, setInfo, user, userName }}>
       {children}
-    </AuthContext.Provider>
+    </InfoContext.Provider>
   );
 };
 
