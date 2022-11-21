@@ -6,6 +6,8 @@ import AddContact from '../pages/AddContact'
 import Profile from '../pages/Profile'
 import Search from '../pages/Search'
 import Sidebar from '../components/Sidebar/Sidebar'
+import Login from '../pages/Login'
+import Register from '../pages/Register'
 
 const Router = () => {
   return (
@@ -13,12 +15,17 @@ const Router = () => {
     <BrowserRouter>
     <Sidebar />
         <Routes>
-            <Route index element={<Home />}/>
+            <Route path='/'  element={<Home />}>
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Route>            
             <Route path='/contact-list' element={<ContactList/>} />
             <Route path='/add-contact' element={<AddContact />} /> 
             <Route path="/search" element={<Search/>} />
             <Route path="/profile" element={<Profile/>} />
+            
         </Routes>
+
     </BrowserRouter>
     </div>
   )
