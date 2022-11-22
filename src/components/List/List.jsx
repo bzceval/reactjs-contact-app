@@ -41,7 +41,7 @@ const List = () => {
                 )}
                 <div className="d-flex gap-2 w-100 justify-content-between">
                   <div className="row">
-                    <h5 className="mb-0">{item.username.toLowerCase()}</h5>
+                    <h6 className="mb-0">{item.username.toLowerCase()}</h6>
                     <p className="mb-0 opacity-75">{item.phoneNumber}</p>
                   </div>
                   <div className="opacity-10 text-nowrap">
