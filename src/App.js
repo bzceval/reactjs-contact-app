@@ -4,18 +4,16 @@ import Router from "./Router/Router";
 import ContextProvider from "./context/ContextProvider";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="container">
-        <div className="card d-flex flex-row align-item-center w-75">
+  return ( 
+      <div className="container d-flex justify-content-center">
+        <div className="card flex-row">
           <ContextProvider>
             <Router>
               <Home />
             </Router>
           </ContextProvider>
         </div>
-      </div>
-    </div>
+      </div> 
   );
 }
 

@@ -1,4 +1,20 @@
 // .App .card {
 //     background-color: #efecef;
 //     border: none;  
-// } 
+// }
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@300;400;500;600;700&display=swap');  
+body {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(83, 84, 125);
+    background: linear-gradient(
+      46deg,
+      rgb(83, 84, 125) 10%,
+      rgb(213,198,215) 50%,
+      rgb(83, 84, 125) 100%
+      
+    )
+}  
