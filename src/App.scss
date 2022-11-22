@@ -16,7 +16,7 @@ body {
 .card {
   background-color: #efecef !important;
 }
-.form-signin {
+.form-auth {
   font-family: "Montserrat", sans-serif; 
   // background-color: #53547d;
   label {
@@ -39,5 +39,8 @@ body {
       background-color: #53547de7; 
       color: #efecef;
     }
+  }
+  .btn-danger {
+    font-size: 12px;
   }
 }  
