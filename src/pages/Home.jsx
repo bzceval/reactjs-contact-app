@@ -4,11 +4,13 @@ const Home = () => {
 
   
   return (
-    <div className="home-container">
-      <div className="container">Home</div>
+    <div>
+      <div className="container">
+        <p>Home</p>
       <Link to="/login">Login</Link> | 
       <Link to="/register"> Sign Up</Link>
       <Outlet />
+      </div>
     </div>
   );
 };
