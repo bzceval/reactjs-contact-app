@@ -6,7 +6,7 @@ import ContextProvider from "./context/ContextProvider";
 function App() {
   return ( 
       <div className="container d-flex justify-content-center">
-        <div className="card flex-row">
+        <div className="card flex-row shadow">
           <ContextProvider>
             <Router>
               <Home />

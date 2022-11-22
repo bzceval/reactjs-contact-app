@@ -22,28 +22,28 @@ const Sidebar = () => {
               <p>Contact List</p>
             </button>
           </li>
-          
+
           <li onClick={() => navigate("/add-contact")} className='d-flex justify-content-center'>
             <button className="nav-link">
             <img src={AddContact} width={20} alt="add contact" />
             <p>Add Contact</p>
             </button>
           </li>
-          
+
           <li onClick={() => navigate("/search")} className='d-flex justify-content-center'>
             <button className="nav-link">
               <img src={Search} width={20} alt="search contact" />
               <p>Search</p>
             </button>
           </li>
-          
+
           <li onClick={() => navigate("/profile")} className='d-flex justify-content-center'>
             <button className="nav-link">
             <img src={Profile} width={20} alt="profile" />
             <p>Profile</p>
             </button>
           </li> 
-          
+
         </ul> 
       </div> 
     </div>

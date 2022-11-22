@@ -1,21 +1,18 @@
 
 const Login = () => {   
-  return (  
-    <main className="form-signin w-100 m-auto bg-light">
-        <form>
-          <h5 className="mb-3 fw-normal">Please sign up</h5> 
-          <div className="form-floating mb-3">
-            <input type="email" className="form-control" id="floatingInput" placeholder='Email address' required/>
-            <label htmlFor="floatingInput">Email address</label>
-          </div>
-          <div className="form-floating mb-3">
-            <input type="password" className="form-control" id="floatingPassword" placeholder='Password' required/>
-            <label htmlFor="floatingPassword">Password</label>
-          </div> 
-          <p className="mb-3 text-muted">Forgat Password?</p>
-          <button className="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-        </form>
-      </main>
+  return (   
+        <form className="form-signin w-100 shadow rounded my-4 pt-4 pb-4 p-4"> 
+        <div className="mb-3">
+          <label htmlFor="email" className="form-label mb-1">Email address</label>
+          <input type="email" className="form-control shadow-sm" id="email" aria-describedby="emailHelp" required/>
+        </div>
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label mb-1">Password</label>
+          <input type="password" className="form-control shadow-sm" id="password" required/>
+        </div> 
+        <p>Forgat Password ?</p>
+        <button type="submit" className="btn btn-login w-100">Submit</button>
+      </form> 
   );
 };
 
