@@ -1,29 +1,29 @@
-.contact-list { 
-  .list-group-item {
-    border: none !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 1s; 
-    &:hover { 
-        transition: all 1s;
-        transform: rotateZ(-1deg) scale(1.01);
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
-    }
-  }
-  h5 {
-    color: #53547d;
-  } 
-  .edit {
-    cursor: pointer; 
-    color: #53547d;
-    &:hover {
-      color: #6b9080 !important;
-    }
-  }
-  .delete {
-    cursor: pointer;
-    color: #53547d;
-    &:hover {
-      color: #bc4749 !important;
-    }
-  }
-}
+// .contact-list { 
+//   .list-group-item {
+//     border: none !important;
+//     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+//     transition: all 1s; 
+//     &:hover { 
+//         transition: all 1s;
+//         transform: rotateZ(-1deg) scale(1.01);
+//         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+//     }
+//   }
+//   h5 {
+//     color: #53547d;
+//   } 
+//   .edit {
+//     cursor: pointer; 
+//     color: #53547d;
+//     &:hover {
+//       color: #6b9080 !important;
+//     }
+//   }
+//   .delete {
+//     cursor: pointer;
+//     color: #53547d;
+//     &:hover {
+//       color: #bc4749 !important;
+//     }
+//   }
+// }

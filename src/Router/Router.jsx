@@ -10,8 +10,7 @@ import Login from '../pages/Login'
 import Register from '../pages/Register'
 
 const Router = () => {
-  return (
-    <div className="router">
+  return ( 
     <BrowserRouter>
     <Sidebar />
         <Routes>
@@ -26,8 +25,7 @@ const Router = () => {
             
         </Routes>
 
-    </BrowserRouter>
-    </div>
+    </BrowserRouter> 
   )
 }
 

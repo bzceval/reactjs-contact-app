@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="card">
+        <div className="card d-flex flex-row">
         <ContextProvider>
           <Router>
             <Home />
