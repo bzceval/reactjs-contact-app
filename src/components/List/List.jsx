@@ -32,12 +32,12 @@ const List = () => {
           <NoFetched />
         ) : (
           contactList?.map((item) => (
-            <div key={item.id} className="list-group w-auto mb-3">
-              <div className="list-group-item list-group-item-action d-flex gap-3 py-3">
+            <div key={item.id} className="list-group w-auto mb-3 mt-3">
+              <div className="list-group-item list-group-item-action d-flex gap-3">
                 {item.gender === "female" ? (
-                  <img src={Girl} alt="profile" width={50} height={50} />
+                  <img src={Girl} alt="profile" width={50} />
                 ) : (
-                  <img src={Man} alt="profile" width={50} height={50} />
+                  <img src={Man} alt="profile" width={50} />
                 )}
                 <div className="d-flex gap-2 w-100 justify-content-between">
                   <div className="row">
