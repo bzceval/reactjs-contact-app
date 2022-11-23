@@ -77,3 +77,39 @@ body {
     background-color: #53547de1 !important; 
   }
 }
+.Search {
+  background: url("./assets/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 150px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem; 
+
+  .search-container {
+    background-color: #efecef;
+    border-radius: .7rem;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: .25rem 0;
+  }
+  .search-container .search-input {
+    width: 100%;
+    background-color: #efecef;
+    border-radius: 1rem;
+    outline: none;
+    border: 0;
+    padding: 0.5rem .7rem;
+  }
+  .search-container .search-input::placeholder {
+    color: #53547d;
+    font-size: 1rem; 
+  } 
+}
+
