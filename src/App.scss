@@ -37,22 +37,23 @@ body {
 //   background-color: #efecef !important;
 // }
 .form-auth {
-  font-family: "Montserrat", sans-serif;  
+  font-family: "Montserrat", sans-serif;   
   label {
     font-family: 'Oswald', sans-serif;
     color: #53547d;
   }
   input {
-    border: none;
-    font-size: 15px; 
+    border: none; 
+    padding: .5rem 1.1rem;
   }
   p {
-    font-size: 12px;
+    font-size: .9rem;
+    cursor: pointer;
     color: #53547d;
   }
   .btn-login {
     background-color: #53547d;
-    font-size: 12px;
+    font-size: .9rem;
     color: #efecef;
     &:hover {
       background-color: #53547de7; 
@@ -60,7 +61,7 @@ body {
     }
   }
   .btn-danger {
-    font-size: 12px;
+    font-size: .9rem;
   }
 }  
 .register-btn, .login-btn {
