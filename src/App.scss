@@ -13,9 +13,17 @@ body {
     rgb(83, 84, 125) 100%
   );
 }
-.card {
-  background-color: #efecef !important;
-}
+.Router {  
+  width: 100vw;
+  height: 400px;
+} 
+.main-container { 
+  max-height: 400px;
+  overflow-y: auto;
+} 
+// .card {
+//   background-color: #efecef !important;
+// }
 .form-auth {
   font-family: "Montserrat", sans-serif; 
   // background-color: #53547d;

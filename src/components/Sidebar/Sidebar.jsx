@@ -11,35 +11,35 @@ const Sidebar = () => {
   
   return (
     <div className='sidebar-container'>
-       <div className="d-flex flex-column text-center" style={{width: '6rem'}}>
-        <NavLink to="/" className="brand text-decoration-none">
+       <div className="d-flex flex-column text-center">
+        <NavLink to="/" className="brand text-decoration-none mb-3 mt-3 border-bottom">
           Firebase Contact App
         </NavLink>
         <ul className="nav nav-pills nav-flush flex-column"> 
           <li onClick={() => navigate("/contact-list")} className='d-flex justify-content-center'>
             <button className="nav-link">
-              <img src={ContactList} width={20} alt="contact list" />
+              <img src={ContactList} width={25} alt="contact list" />
               <p>Contact List</p>
             </button>
           </li>
 
           <li onClick={() => navigate("/add-contact")} className='d-flex justify-content-center'>
             <button className="nav-link">
-            <img src={AddContact} width={20} alt="add contact" />
+            <img src={AddContact} width={25} alt="add contact" />
             <p>Add Contact</p>
             </button>
           </li>
 
           <li onClick={() => navigate("/search")} className='d-flex justify-content-center'>
             <button className="nav-link">
-              <img src={Search} width={20} alt="search contact" />
+              <img src={Search} width={25} alt="search contact" />
               <p>Search</p>
             </button>
           </li>
 
           <li onClick={() => navigate("/profile")} className='d-flex justify-content-center'>
             <button className="nav-link">
-            <img src={Profile} width={20} alt="profile" />
+            <img src={Profile} width={25} alt="profile" />
             <p>Profile</p>
             </button>
           </li> 

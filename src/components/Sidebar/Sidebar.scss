@@ -1,5 +1,6 @@
 .sidebar-container {
-    background-color: white; 
+    background-color: white;  
+    max-height: 400px;  
     .brand {
         font-family: 'Bangers', cursive;
         font-size: 1.2rem;
@@ -7,7 +8,7 @@
     } 
     button p { 
         font-weight: 700;
-        font-size: 12px;
+        font-size: .8rem;
         color: #53547d; 
         &:hover {
            color: #ad9fc3;

@@ -20,7 +20,7 @@ const List = () => {
 // console.log(editItem)
   
   return (
-    <div className="contact-list p-3">  
+    <div className="contact-list">  
       <div className="container">
         {isLoading ? (
           <div className="d-flex justify-content-center">
