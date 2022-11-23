@@ -1,39 +1,38 @@
-// .contact-form {  
-//     label {
-//         color: #72669b;
-//         font-weight: 800;
-//         text-transform: uppercase;  
-//     }
-//     input {  
-//         outline-style: none !important;
-//         box-shadow: 2px 2px 3px #5d5c5d8e;
-//         border: none; 
+.contact-form {  
+    label {
+        color: #72669b;
+        font-family: 'Oswald', sans-serif;
+    }
+    input {  
+        outline-style: none !important;
+        box-shadow: 2px 2px 3px #5d5c5d8e;
+        border: none; 
         
-//         &:hover { 
-//             box-shadow: 2px 3px 3px #7b74a3;
-//             outline-style: none !important;
-//             border: none !important;
-//             transition: all .5s;
-//         } 
-//     }
+        &:hover { 
+            box-shadow: 2px 3px 3px #7b74a3;
+            outline-style: none !important;
+            border: none !important;
+            transition: all .5s;
+        } 
+    }
 
-//     select { 
-//         box-shadow: 2px 2px 3px #5d5c5d8e;
-//         border: none;
-//         &:hover { 
-//             box-shadow: 2px 3px 3px #7b74a3;
-//             outline-style: none !important;
-//             border: none !important;
-//             transition: all .5s;
-//         }
-//     }
+    select { 
+        box-shadow: 2px 2px 3px #5d5c5d8e;
+        border: none; 
+        &:hover { 
+            box-shadow: 2px 3px 3px #7b74a3;
+            outline-style: none !important;
+            border: none !important;
+            transition: all .5s;
+        }
+    }
 
-//     .btn-primary {
-//         background-color: #53547d !important;
-//         color: #efecef !important;
-//         border: none;
-//         &:hover {
-//            background-color: #7b74a3 !important;  
-//         } 
-//     }
-// }
+    .btn-primary {
+        background-color: #53547d !important;
+        color: #efecef !important;
+        border: none;
+        &:hover {
+           background-color: #7b74a3 !important;  
+        } 
+    }
+}

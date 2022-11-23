@@ -13,7 +13,7 @@ const handleChange = (e) => {
   setInfo({...info, [name]:value})
 }
   return (
-    <form onSubmit={handleSubmit} className="mt-4 contact-form">
+    <form onSubmit={handleSubmit} className="contact-form w-100 shadow rounded my-4 pt-4 pb-4 p-4">
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Fullname</label>
           <input onChange={handleChange} name="username" value={info.username} type="text" className="form-control" id="username" /> 

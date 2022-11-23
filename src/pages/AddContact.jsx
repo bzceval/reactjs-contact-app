@@ -14,13 +14,10 @@ const handleSubmit = (e) => {
   setInfo({username:"", phoneNumber:"", gender:""});
 }
 
-  return (
-    <div className="add-contact-container p-5">
-      <div className="container">
-        <h2 className="text-start border-bottom">Add Contact</h2>
+  return ( 
+      <div className="container"> 
         <ContactForm info={info} setInfo={setInfo} handleSubmit={handleSubmit} />
-      </div>
-    </div>
+      </div> 
   );
 };
 
