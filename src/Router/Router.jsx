@@ -12,6 +12,7 @@ import Register from "../pages/Register";
 const Router = () => {
   return (
     <BrowserRouter> 
+    <div className="card shadow">
         <div class="container Router row">
           <div class="col-md-4">
             <Sidebar />
@@ -31,6 +32,7 @@ const Router = () => {
             </div>
           </div>
         </div> 
+        </div>
     </BrowserRouter>
   );
 };
