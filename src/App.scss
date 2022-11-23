@@ -22,6 +22,17 @@ body {
   max-height: 400px;
   overflow-y: auto;
 } 
+.home h6 { 
+  color: #53547d;
+  font-family: "Montserrat", sans-serif; 
+  line-height: 1.7rem;
+}
+.brand {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  color: #53547d; 
+  text-align: center; 
+}
 // .card {
 //   background-color: #efecef !important;
 // }
@@ -52,3 +63,17 @@ body {
     font-size: 12px;
   }
 }  
+.register-btn, .login-btn {
+  background-color: #53547d !important; 
+  font-size: .9rem !important;
+  a {
+    text-decoration: none;
+    color: #efecef;
+    &:hover {
+      color: #efecef;
+    }
+  }
+  &:hover{
+    background-color: #53547de1 !important; 
+  }
+}

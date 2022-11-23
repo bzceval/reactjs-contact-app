@@ -5,17 +5,22 @@ import AddContact from '../../assets/add-contact.png'
 import ContactList from '../../assets/contact-list.png'
 import Search from '../../assets/search-contact.png'
 import Profile from '../../assets/profile.png'
+import Home from '../../assets/home.png'
 
 const Sidebar = () => {
   const navigate = useNavigate()
   
   return (
-    <div className='sidebar-container p-2'>
+    <div className='sidebar-container'>
        <div className="d-flex flex-column text-center">
-        <NavLink to="/" className="brand text-decoration-none mb-3 mt-3 border-bottom">
-          Firebase Contact App
-        </NavLink>
         <ul className="nav nav-pills nav-flush flex-column"> 
+        <li onClick={() => navigate("/")} className='d-flex justify-content-center'>
+            <button className="nav-link">
+              <img src={Home} width={30} alt="contact list" />
+              <p>Home</p>
+            </button>
+          </li>
+
           <li onClick={() => navigate("/contact-list")} className='d-flex justify-content-center'>
             <button className="nav-link">
               <img src={ContactList} width={30} alt="contact list" />
