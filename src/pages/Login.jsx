@@ -19,7 +19,7 @@ const Login = () => {
   <div className="container">
    <div className="form-auth w-100 shadow rounded my-3 mt-5">
     <form onSubmit={handleLogin}>
-      <h6 className="text-center fs-2 display-1 pt-4 text-decoration-underline"> Login </h6>
+      <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline"> Login </h6>
 
       <div className="mb-3 pe-4 ps-4">
         <label htmlFor="email" className="form-label mb-2"> Email address </label>
