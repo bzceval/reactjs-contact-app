@@ -7,10 +7,10 @@ const initialValues = {username:"", phoneNumber:"", gender:""}
 
 const ContextProvider = ({ children }) => {
     const [info, setInfo] = useState(initialValues) 
-    const [user, userName] = useState()
+    const [user, setUser] = useState()
 
   return (
-    <InfoContext.Provider value={{ info, setInfo, user, userName }}>
+    <InfoContext.Provider value={{ info, setInfo, user, setUser }}>
       {children}
     </InfoContext.Provider>
   );
