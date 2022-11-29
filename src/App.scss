@@ -15,82 +15,106 @@ body {
 }
 .card {
   background-color: #efecef !important;
-  .row {
-    .main { 
-      .home {
-        overflow-y: auto;
-        h6 {
-          line-height: 2rem;
-        }
-      }
+  width: 700px !important;
+  height: 500px !important;
+  border: 0 !important ;
+  .leftCard {
+    width: 115px !important;
+  }
+  .righCard {
+    overflow: hidden auto !important;
+    width: calc(700px - 115px ) !important;
+    padding: 0 !important;
+    margin-left: 115px !important;
+    .profile {
+      width: calc(700px - 200px ) !important;
+      height: 400px !important;
+    }
+  }
+  .sidebar-container{
+    height: 496px !important;
+    position: fixed;
+    border-radius: .5rem 0 0 .5rem;
+  }
+    .home {
+      overflow-y: auto;
+      width: calc(100% - 5px) !important;
       h6 {
-        color: #53547d;
-        font-family: "Montserrat", sans-serif;
-        line-height: 1.7rem;
-      }
-      .brand {
-        font-family: "Bangers", cursive;
-        font-size: 1.7rem;
-        color: #53547d;
-        text-align: center;
-      }
-      .form-auth {
-        font-family: "Montserrat", sans-serif;
-        label {
-          font-family: "Oswald", sans-serif;
-          color: #53547d;
-        }
-        input {
-          border: none;
-          padding: 0.5rem 1.1rem;
-        }
-        p {
-          font-size: 0.9rem;
-          cursor: pointer;
-          color: #53547d;
-        }
-        .btn-login {
-          background-color: #53547d;
-          font-size: 0.9rem;
-          color: #efecef;
-          &:hover {
-            background-color: #53547de7;
-            color: #efecef;
-          }
-        }
-        .btn-danger {
-          font-size: 0.9rem;
-        }
-      }
-      .register-btn,
-      .login-btn {
-        background-color: #53547d !important;
-        font-size: 0.9rem !important;
-        a {
-          text-decoration: none;
-          color: #efecef;
-          &:hover {
-            color: #efecef;
-          }
-        }
-        &:hover {
-          background-color: #53547de1 !important;
-        }
+        line-height: 2rem;
       }
     }
+    h6 {
+      color: #53547d;
+      font-family: "Montserrat", sans-serif;
+      line-height: 1.7rem;
+    }
+    .brand {
+      font-family: "Bangers", cursive;
+      font-size: 1.7rem;
+      color: #53547d;
+      text-align: center;
+    }
+    .form-auth {
+      font-family: "Montserrat", sans-serif;
+      width: 80% !important;
+      margin: auto;
+      label {
+        font-family: "Oswald", sans-serif;
+        color: #53547d;
+      }
+      input {
+        border: none;
+        padding: 0.5rem 1.1rem;
+      }
+      p {
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #53547d;
+      }
+      .btn-login {
+        background-color: #53547d;
+        font-size: 0.9rem;
+        color: #efecef;
+        &:hover {
+          background-color: #53547de7;
+          color: #efecef;
+        }
+      }
+      .btn-danger {
+        font-size: 0.9rem;
+      }
+    }
+    .register-btn,
+    .login-btn {
+      background-color: #53547d !important;
+      font-size: 0.9rem !important;
+      a {
+        text-decoration: none;
+        color: #efecef;
+        &:hover {
+          color: #efecef;
+        }
+      }
+      &:hover {
+        background-color: #53547de1 !important;
+      }
+    }
+    
 
     .Search {
       background: url("./assets/background.jpg") no-repeat;
       background-size: cover;
       background-position: center center;
       height: 150px;
-      width: 100%;
+      width: 100% ;
       font-family: "Montserrat", sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       gap: 1rem;
+      border-top-right-radius: .5rem !important;
+      overflow: hidden;
 
       .search-container {
         background-color: rgba(0, 0, 0, 0.5);
@@ -113,5 +137,5 @@ body {
         }
       }
     }
-  }
+  
 }
