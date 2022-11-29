@@ -13,12 +13,12 @@ const Router = () => {
   return (
     <BrowserRouter> 
     <div className="card shadow">
-        <div class="container Router row">
+        <div class="row">
           <div class="col-md-4">
             <Sidebar />
           </div>
-          <div class="col-md-8 bg-light">
-            <div className="main-container">
+          <div class="col-md-8">
+            <div className="main">
             <Routes>
               <Route path="/" element={<Home />}>
                 <Route path="/login" element={<Login />} />
@@ -29,7 +29,7 @@ const Router = () => {
               <Route path="/search" element={<Search />} />
               <Route path="/profile" element={<Profile />} />
             </Routes>
-            </div>
+          </div>
           </div>
         </div> 
         </div>

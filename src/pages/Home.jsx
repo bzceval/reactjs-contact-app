@@ -3,7 +3,7 @@ import Bird from "../assets/Bird.gif";
 
 const Home = () => {
   return (
-    <div className="home container my-4">
+    <div className="home">
         <div className="brand text-decoration-none mb-3 mt-4 border-bottom">
           Bird Contact App
         </div>
