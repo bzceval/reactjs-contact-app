@@ -1,5 +1,4 @@
 import "./App.scss";
-import Home from "./pages/Home";
 import Router from "./Router/Router";
 
 function App() {

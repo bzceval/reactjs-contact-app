@@ -8,31 +8,29 @@ import Search from "../pages/Search";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import HomePage from "../pages/HomePage";
 
 const Router = () => {
   return (
-    <BrowserRouter> 
-    <div className="card shadow">
-        <div class="row">
-          <div class="col-md-4">
-            <Sidebar />
-          </div>
-          <div class="col-md-8">
-            <div className="main">
-            <Routes>
-              <Route path="/" element={<Home />}>
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-              </Route>
-              <Route path="/contact-list" element={<ContactList />} />
-              <Route path="/add-contact" element={<AddContact />} />
-              <Route path="/search" element={<Search />} />
-              <Route path="/profile" element={<Profile />} />
-            </Routes>
-          </div>
-          </div>
-        </div> 
+    <BrowserRouter>
+      <div className="card shadow ">
+        <div className="col-md-4 leftCard">
+          <Sidebar />
         </div>
+        <div className="col righCard">
+          <Routes>
+            <Route path="/" element={<Home />}>
+              <Route path="" element={<HomePage />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+            </Route>
+            <Route path="/contact-list" element={<ContactList />} />
+            <Route path="/add-contact" element={<AddContact />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </div>
+      </div>
     </BrowserRouter>
   );
 };
