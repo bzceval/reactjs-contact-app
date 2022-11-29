@@ -13,7 +13,7 @@ const Home = () => {
           <Link to="/login">Login</Link>
         </button>
         <button className="btn register-btn mx-2">
-          <Link to="/register"> Sign Up</Link>
+          <Link to="/register"> Register </Link>
         </button>
       </div>
       <Outlet />
