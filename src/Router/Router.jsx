@@ -9,6 +9,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import HomePage from "../pages/HomePage";
+import PrivateRouter from "./PrivateRouter";
 
 const Router = () => {
   return (
@@ -24,8 +25,10 @@ const Router = () => {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
             </Route>
+            <Route path="/add-contact" element={ <PrivateRouter/> }>
+              <Route path="" element={<AddContact />} />
+            </Route>
             <Route path="/contact-list" element={<ContactList />} />
-            <Route path="/add-contact" element={<AddContact />} />
             <Route path="/search" element={<Search />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
