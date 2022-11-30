@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Bird from "../assets/Bird.gif";
-import { InfoContext } from "../context/ContextProvider";
+import { MainContext } from "../context/ContextProvider";
 import { logOut } from "../utils/authFunctions";
 
 const HomePage = () => {
   const navigate = useNavigate()
-  const {user} = useContext(InfoContext)
+  const {user} = useContext(MainContext)
   console.log(user)
   return (
     <div>

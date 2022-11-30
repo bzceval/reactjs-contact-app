@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import ContactForm from "../components/ContactForm/ContactForm";
 import { AddUser } from "../utils/firebaseFunctions";
-import { InfoContext } from "../context/ContextProvider";
+import { MainContext } from "../context/ContextProvider";
 
 // const initialValues = {username:"", phoneNumber:"", gender:""}
 
 const AddContact = () => {
-  const { info, setInfo } = useContext(InfoContext);
+  const { info, setInfo } = useContext(MainContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
