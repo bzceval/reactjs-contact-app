@@ -1,4 +1,4 @@
-import firebase from "./firebase";
+import firebase from "./firebase.js";
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -11,14 +11,12 @@ import {
   updateProfile,
 } from "firebase/auth";
 
-// Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(firebase);
 
+
 export const createUser = async (email, password, navigate, displayName) => {
-  //? yeni bir kullanıcı oluşturmak için kullanılan firebase metodu
   try {
-    await createUserWithEmailAndPassword(auth, email, password);
-    //? kullanıcı profilini güncellemek için kullanılan firebase metodu
+    await createUserWithEmailAndPassword(auth, email, password); 
     await updateProfile(auth.currentUser, {
       displayName: displayName,
     });
@@ -28,6 +26,7 @@ export const createUser = async (email, password, navigate, displayName) => {
     console.log(err.message);
   }
 };
+
 
 export const signIn = async (email, password, navigate) => {
   try {
@@ -45,17 +44,17 @@ export const signIn = async (email, password, navigate) => {
   }
 };
 
+
 export const userObserver = (setCurrentUser) => {
-  //? Kullanıcının signin olup olmadığını takip eden ve kullanıcı değiştiğinde yeni kullanıcıyı response olarak dönen firebase metodu
   onAuthStateChanged(auth, (user) => {
     if (user) {
       setCurrentUser(user);
-    } else {
-      // User is signed out
+    } else { 
       setCurrentUser(false);
     }
   });
 };
+
 
 export const logOut = () => {
   signOut(auth);
@@ -70,17 +69,15 @@ export const signUpProvider = (navigate) => {
       navigate("/");
       console.log("Logged out successfully!");
     })
-    .catch((error) => {
-      // Handle Errors here.
+    .catch((error) => { 
       console.log(error);
     });
 };
 
-export const forgotPassword = (email) => {
-  //? Email yoluyla şifre sıfırlama için kullanılan firebase metodu
+
+export const forgotPassword = (email) => { 
   sendPasswordResetEmail(auth, email)
     .then(() => {
-      // Password reset email sent!
       console.log("Please check your mail box!");
     })
     .catch((err) => {
