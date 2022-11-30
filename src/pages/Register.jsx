@@ -12,6 +12,7 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault() 
     const displayName = `${firstName} ${lastName}`;
+    console.log(firstName, lastName);
     createUser(email, password, navigate, displayName) 
   }
 
@@ -45,8 +46,7 @@ const Register = () => {
        </div>
  
        <div className="pe-4 ps-4">
-         <p>Forgat Password ?</p>
-         <button type="submit" className="btn btn-login w-100 mb-3"> Login </button>
+         <button type="submit" className="btn btn-login w-100 mb-3"> Register </button>
        </div>
  
      </form>

@@ -7,6 +7,7 @@ import { logOut } from "../utils/authFunctions";
 const HomePage = () => {
   const navigate = useNavigate()
   const {user} = useContext(InfoContext)
+  console.log(user)
   return (
     <div>
       <div className="brand text-decoration-none mb-3 mt-4 border-bottom">
