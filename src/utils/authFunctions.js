@@ -29,11 +29,7 @@ export const createUser = async (email, password, navigate, displayName) => {
   }
 };
 
-//* https://console.firebase.google.com/
-//* => Authentication => sign-in-method => enable Email/password
-//! Email/password ile girişi enable yap
 export const signIn = async (email, password, navigate) => {
-  //? mevcut kullanıcının giriş yapması için kullanılan firebase metodu
   try {
     let userCredential = await signInWithEmailAndPassword(
       auth,
@@ -65,15 +61,9 @@ export const logOut = () => {
   signOut(auth);
 };
 
-//* https://console.firebase.google.com/
-//* => Authentication => sign-in-method => enable Google
-//! Google ile girişi enable yap
-//* => Authentication => sign-in-method => Authorized domains => add domain
-//! Projeyi deploy ettikten sonra google sign-in çalışması için domain listesine deploy linkini ekle
-export const signUpProvider = (navigate) => {
-  //? Google ile giriş yapılması için kullanılan firebase metodu
-  const provider = new GoogleAuthProvider();
-  //? Açılır pencere ile giriş yapılması için kullanılan firebase metodu
+
+export const signUpProvider = (navigate) => { 
+  const provider = new GoogleAuthProvider(); 
   signInWithPopup(auth, provider)
     .then((result) => {
       console.log(result);

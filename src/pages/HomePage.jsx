@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Bird from "../assets/Bird.gif";
+import { InfoContext } from "../context/ContextProvider";
+import { logOut } from "../utils/authFunctions";
 
 const HomePage = () => {
+  const navigate = useNavigate()
+  const {user} = useContext(InfoContext)
   return (
     <div>
       <div className="brand text-decoration-none mb-3 mt-4 border-bottom">
@@ -11,17 +16,19 @@ const HomePage = () => {
         Welcome to the Bird Contact Web App. Access all your connections
         wherever you are in the world
       </h6>
-      <div className="btn-container text-center my-3">
-        <button className="btn login-btn mx-2">
-          <Link to="/login">Login</Link>
-        </button>
-        <button className="btn register-btn mx-2">
-          <Link to="/register"> Register </Link>
-        </button>
-      </div>
-      <div className="text-center">
+      
+      {user && <div className="btn-container text-center my-3">
+        <button className="btn login-btn mx-2" onClick={() => logOut()}> Logout</button>
+      </div>}
+
+      {!user && <> <div className="btn-container text-center my-3">
+        <button className="btn login-btn mx-2" onClick={() => navigate("/login")}> Login</button>
+        <button className="btn register-btn mx-2" onClick={() => navigate("/register")}>Register</button>
+      </div> <div className="text-center">
         <img src={Bird} alt="Bird" width={250} />
-      </div>
+      </div></>} 
+      
+      
     </div>
   );
 };
