@@ -117,7 +117,7 @@ body {
       overflow: hidden;
 
       .search-container {
-        background-color: rgba(0, 0, 0, 0.623);
+        background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
         height: 100%;
         display: flex;
@@ -125,12 +125,12 @@ body {
         justify-content: center;
         .search-input {
           width: 60%;
-          background-color: #efecef;
+          background-color: #53547d91;
           border-radius: 5%;
           outline: none;
           border: 0;
+          color: #efecef;
           padding: 0.3rem 0.5rem;
-
           &::placeholder {
             color: #53547d;
           }

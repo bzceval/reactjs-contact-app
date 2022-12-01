@@ -42,17 +42,7 @@ const Sidebar = () => {
               <img src={AddContact} width={30} alt="add contact" />
               <p>Add Contact</p>
             </button>
-          </li>
-
-          <li
-            onClick={() => navigate("/search")}
-            className="d-flex justify-content-center"
-          >
-            <button className="nav-link">
-              <img src={Search} width={30} alt="search contact" />
-              <p>Search</p>
-            </button>
-          </li>
+          </li> 
 
           <li
             onClick={() => navigate("/profile")}
