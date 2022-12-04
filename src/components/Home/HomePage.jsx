@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Bird from "../assets/Bird.gif";
-import { MainContext } from "../context/ContextProvider";
-import { logOut } from "../utils/authFunctions";
+import Bird from "../../assets/Bird.gif";
+import { MainContext } from "../../context/ContextProvider";
+import { logOut } from "../../utils/authFunctions";
 
 const HomePage = () => {
   const navigate = useNavigate()

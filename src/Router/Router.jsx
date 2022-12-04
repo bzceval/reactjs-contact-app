@@ -5,8 +5,7 @@ import ContactList from "../pages/ContactList";
 import AddContact from "../pages/AddContact"; 
 import Sidebar from "../components/Sidebar/Sidebar";
 import Login from "../pages/Login";
-import Register from "../pages/Register";
-import HomePage from "../pages/HomePage";
+import Register from "../pages/Register"; 
 // import PrivateRouter from "./PrivateRouter";
 
 const Router = () => {
@@ -18,11 +17,9 @@ const Router = () => {
         </div>
         <div className="col-9 col-xs-10 col-sm-10 righCard">
           <Routes>
-            <Route path="/" element={<Home />}>
-              <Route path="" element={<HomePage />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-            </Route>
+            <Route path="/" element={<Home />} /> 
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
 
             {/* <Route path="/add-contact" element={<PrivateRouter />}>
               <Route path="" element={<AddContact />} />
