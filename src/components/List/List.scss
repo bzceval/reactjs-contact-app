@@ -29,4 +29,10 @@
       color: #bc4749 !important;
     }
   }
+  @media (max-width: 771px) {
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  } 
 }

@@ -12,12 +12,28 @@ body {
     rgb(213, 198, 215) 50%,
     rgb(83, 84, 125) 100%
   );
+  background-position: center center;
+
 }
 .container {
   height: 500px !important;
-  width: 750px !important; 
+  width: 750px !important;  
+  @media (max-width: 771px) {
+    width: 390px !important;
+  } 
   .righCard {
     overflow-x: auto; 
+    @media (max-width: 771px) { 
+      width: 300px !important;
+      .row {
+        padding: 15px !important;
+      }
+    } 
+  }
+  .leftCard {
+    @media (max-width: 771px) {
+      width: 70px !important;
+    } 
   }
 }
 .auth-form {  
@@ -71,3 +87,10 @@ body {
      background-color: #7b74a3 !important;  
   }
 }  
+.home {
+  @media (max-width: 771px) { 
+    img {
+      width: 170px;
+    }
+}
+}

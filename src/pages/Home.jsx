@@ -9,14 +9,13 @@ const Home = () => {
   const navigate = useNavigate()
   const {user} = useContext(MainContext)
   return ( 
-    <div className="p-3 mt-4">
+    <div className="home p-3 mt-4">
       <div className="home-description text-center">
         <h6 className="fs-2 display-1 text-decoration-underline mb-4">Bird Contact</h6> 
         <p>Welcome to the Bird Contact Web App. Access all your connections wherever you are in the world. </p>
       </div>   
       <div>
-      {user && <div className="text-center my-5">
-        <div className="user"></div>
+      {user && <div className="text-center my-5"> 
           <img src={BirdWelcome} alt="Bird Welcome" width={60}/>
           <h5>Hi {user.displayName}, how are you today?</h5>
           <button className="btn auth-btn mx-2 my-5" onClick={() => logOut()}> Logout</button>

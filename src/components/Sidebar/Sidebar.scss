@@ -11,4 +11,10 @@
            color: #ad9fc3;
         }
     }
+
+    @media (max-width: 771px) { 
+        img {
+            width: 20px !important;
+        }
+      }
 }
