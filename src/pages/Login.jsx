@@ -19,9 +19,9 @@ const Login = () => {
 
   return (
     <div className="row col-12 ">
-      <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6>
-    
-      <form onSubmit={handleLogin}>
+      <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6> 
+    <div className="gap-3" >  
+       <form onSubmit={handleLogin} className="p-4">
 
         <div className="mb-3 pe-4 ps-4">
           <label htmlFor="email" className="form-label mb-2"> Email address </label>
@@ -35,10 +35,12 @@ const Login = () => {
 
         <div className="pe-4 ps-4">
           <p onClick={() => forgotPassword(email)}>Forgat Password ?</p>
-          <button type="submit" className="btn btn-login w-100 mb-3"> Login </button>
+          <button type="submit" className="btn btn-login w-100 mb-2"> Login </button>
         </div>
 
-      </form>
+      </form> 
+    </div>  
+    
       <div className="google-provider text-center">
         <button onClick={handleProviderLogin} type="submit" className="btn btn-danger mb-3" > Continue with Google </button>
       </div>
