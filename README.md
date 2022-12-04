@@ -1,7 +1,4 @@
 # React Firebase Contact App
-
-![GitHub last commit](https://img.shields.io/github/last-commit/sinansarikaya/react-firebase-contact-app?style=flat-square)
-
 Responsive contact app made using React and Firebase realtime database.
 
 <hr />
@@ -15,3 +12,6 @@ Responsive contact app made using React and Firebase realtime database.
 - Sass
 - React Toastify
 - React Context
+
+## Demo
+![contact](https://user-images.githubusercontent.com/100320309/205521794-7aa463ac-f3a0-4d08-8e58-25fa63864482.gif)
