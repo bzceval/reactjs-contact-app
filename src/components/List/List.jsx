@@ -47,7 +47,7 @@ const List = () => {
                     <p className="mb-0 opacity-75">{item.phoneNumber}</p>
                   </div>
                   {user && (
-                    <div className="opacity-10 text-nowrap">
+                    <div className="opacity-10 text-nowrap me-auto">
                       <div className="d-flex">
                         <MdDelete
                           onClick={() => DeleteUser(item.id)}

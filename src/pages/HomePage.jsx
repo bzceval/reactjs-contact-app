@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="brand text-decoration-none mb-3 mt-4 border-bottom">
-        Bird Contact App
+        <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Bird Contact App</h6>
       </div>
       <h6 className="text-center">
         Welcome to the Bird Contact Web App. Access all your connections
