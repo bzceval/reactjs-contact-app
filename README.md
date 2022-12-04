@@ -11,4 +11,5 @@ Responsive contact app made using React and Firebase realtime database.
 - React Context
 
 ## Demo
-![contact](https://user-images.githubusercontent.com/100320309/205521794-7aa463ac-f3a0-4d08-8e58-25fa63864482.gif)
+
+![contact](https://user-images.githubusercontent.com/100320309/205522879-7ba89395-3fec-4256-8475-70d66e08b3ee.gif)
