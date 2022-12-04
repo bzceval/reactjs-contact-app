@@ -20,26 +20,25 @@ const Login = () => {
   return (
     <div className="row col-12">
       <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6> 
-    <div className="gap-3" >  
-       <form onSubmit={handleLogin} className="p-4">
+    
+       <form onSubmit={handleLogin}>
 
-        <div className="mb-3 pe-4 ps-4">
+        <div className="mb-3 ">
           <label htmlFor="email" className="form-label mb-2"> Email address </label>
-          <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control shadow-sm" id="email" required />
+          <input onChange={(e) => setEmail(e.target.value)} type="email" className="shadow form-control shadow-sm" id="email" required />
         </div>
 
-        <div className="mb-3 pe-4 ps-4">
+        <div className="mb-3 ">
           <label htmlFor="password" className="form-label mb-2"> Password </label>
-          <input onChange={(e) => setPassword(e.target.value)} type="password" className="form-control shadow-sm" id="password" required />
+          <input onChange={(e) => setPassword(e.target.value)} type="password" className="shadow form-control shadow-sm" id="password" required />
         </div>
 
-        <div className="pe-4 ps-4">
+        <div>
           <p onClick={() => forgotPassword(email)}>Forgat Password ?</p>
           <button type="submit" className="btn btn-login w-100 mb-2"> Login </button>
         </div>
 
-      </form> 
-    </div>  
+      </form>  
     
       <div className="google-provider text-center">
         <button onClick={handleProviderLogin} type="submit" className="btn btn-danger mb-3" > Continue with Google </button>

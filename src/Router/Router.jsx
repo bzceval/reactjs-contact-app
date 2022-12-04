@@ -12,10 +12,10 @@ const Router = () => {
   return (
     <BrowserRouter>
       <div className="container d-flex shadow ">
-        <div className="col-3 col-xs-2 col-sm-2 leftCard">
+        <div className="col-3 leftCard">
           <Sidebar />
         </div>
-        <div className="col-9 col-xs-10 col-sm-10 righCard">
+        <div className="col-9 righCard">
           <Routes>
             <Route path="/" element={<Home />} /> 
             <Route path="/login" element={<Login />} />
