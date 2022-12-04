@@ -6,7 +6,7 @@ import AddContact from "../pages/AddContact";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Login from "../pages/Login";
 import Register from "../pages/Register"; 
-// import PrivateRouter from "./PrivateRouter";
+import PrivateRouter from "./PrivateRouter";
 
 const Router = () => {
   return (
@@ -21,10 +21,10 @@ const Router = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
 
-            {/* <Route path="/add-contact" element={<PrivateRouter />}>
+            <Route path="/add-contact" element={<PrivateRouter />}>
               <Route path="" element={<AddContact />} />
-            </Route> */}
-            <Route path="/add-contact" element={<AddContact />} />  
+            </Route>
+            {/* <Route path="/add-contact" element={<AddContact />} />   */}
             <Route path="/contact-list" element={<ContactList />} />
           </Routes>
         </div>
