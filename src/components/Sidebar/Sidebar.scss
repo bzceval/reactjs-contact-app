@@ -1,5 +1,8 @@
-.sidebar-container {
-    background-color: white;   
+.sidebar-container { 
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     button p { 
         font-weight: 700;
         font-size: .8rem;

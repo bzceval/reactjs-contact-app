@@ -34,7 +34,7 @@ const Login = () => {
         </div>
 
         <div>
-          <p className="forgat" onClick={() => forgotPassword(email)}>Forgat Password ?</p>
+          <p className="forgat my-4" onClick={() => forgotPassword(email)}>Forgat Password ?</p>
           <button type="submit" className="btn btn-auth w-100 mb-2"> Login </button>
         </div>
 

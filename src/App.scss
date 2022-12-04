@@ -15,9 +15,9 @@ body {
 }
 .container {
   height: 500px !important;
-  width: 750px !important;
+  width: 750px !important; 
   .righCard {
-    overflow-x: auto;
+    overflow-x: auto; 
   }
 }
 
@@ -60,4 +60,21 @@ body {
   .forgat {
     cursor: pointer;
   }
+}
+.home-description {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.705);
+}
+.auth-btn {
+  background-color: #53547d !important;
+  color: #efecef !important;
+  border: none;
+  &:hover {
+     background-color: #7b74a3 !important;  
+  }
+}
+h6 {
+  color: #53547d;
 }
