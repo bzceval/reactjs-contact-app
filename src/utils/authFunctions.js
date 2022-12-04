@@ -10,6 +10,11 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+import {
+  toastErrorNotify,
+  toastSuccessNotify,
+  toastWarnNotify,
+} from "../helpers/ToastNotify";
 
 const auth = getAuth(firebase);
 
@@ -22,8 +27,9 @@ export const createUser = async (email, password, navigate, displayName) => {
     });
     console.log("Registered successfully!");
     navigate("/");
-  } catch (err) {
-    console.log(err.message);
+    toastSuccessNotify("Registered successfully!");
+  } catch (error) { 
+    toastErrorNotify(error.message);
   }
 };
 
@@ -36,11 +42,10 @@ export const signIn = async (email, password, navigate) => {
       password
     );
     navigate("/");
-    console.log("Logged in successfully!");
+    toastSuccessNotify("Registered successfully!");
     console.log(userCredential);
-  } catch (err) {
-    console.log(err.message);
-    console.log(err);
+  } catch (error) {
+    toastErrorNotify(error.message);
   }
 };
 
@@ -58,6 +63,7 @@ export const userObserver = (setCurrentUser) => {
 
 export const logOut = () => {
   signOut(auth);
+  toastSuccessNotify("Logged out successfully!");
 };
 
 
@@ -67,7 +73,7 @@ export const signUpProvider = (navigate) => {
     .then((result) => {
       console.log(result);
       navigate("/");
-      console.log("Logged out successfully!");
+      toastSuccessNotify("Logged in successfully!");
     })
     .catch((error) => { 
       console.log(error);
@@ -82,5 +88,18 @@ export const forgotPassword = (email) => {
     })
     .catch((err) => {
       console.log(err.message);
+    });
+};
+
+
+// Reset Function
+export const passwordReset = (navigate, email) => {
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      navigate("/login");
+      toastWarnNotify("Please check your mail box!");
+    })
+    .catch((error) => {
+      toastErrorNotify(error.message);
     });
 };

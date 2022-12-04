@@ -24,7 +24,7 @@ const Home = () => {
         <button className="btn auth-btn mx-2" onClick={() => navigate("/login")}> Login</button>
         <button className="btn auth-btn mx-2" onClick={() => navigate("/register")}> Register</button>
       </div> <div className="text-center">
-        <img src={Bird} alt="Bird" className="rounded shadow-sm" width={350} />
+        <img src={Bird} alt="Bird" className="rounded shadow-sm" width={250} />
       </div></>} 
       </div> 
       </div>  
