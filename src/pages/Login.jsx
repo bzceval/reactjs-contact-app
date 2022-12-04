@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="row col-12 ">
+    <div className="row col-12">
       <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6> 
     <div className="gap-3" >  
        <form onSubmit={handleLogin} className="p-4">
