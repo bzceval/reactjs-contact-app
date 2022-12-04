@@ -34,20 +34,20 @@ const List = () => {
           <NoFetched />
         ) : (
           contactList?.map((item) => (
-            <div key={item.id} className="list-group mb-3 mt-3">
+            <div key={item.id} className="list-group mb-4 mt-4 w-auto">
               <div className="list-group-item list-group-item-action d-flex gap-3">
                 {item.gender === "female" ? (
                   <img src={Girl} alt="profile" width={50} />
                 ) : (
                   <img src={Man} alt="profile" width={50} />
                 )}
-                <div className="d-flex gap-2 justify-content-between">
-                  <div className="row">
+                <div className="d-flex gap-2 w-100 justify-content-between">
+                  <div>
                     <h6 className="mb-0">{item.username.toLowerCase()}</h6>
                     <p className="mb-0 opacity-75">{item.phoneNumber}</p>
                   </div>
                   {user && (
-                    <div className="opacity-10 text-nowrap me-auto">
+                    <div className="opacity-10 text-nowrap">
                       <div className="d-flex">
                         <MdDelete
                           onClick={() => DeleteUser(item.id)}
