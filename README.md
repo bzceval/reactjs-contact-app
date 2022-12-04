@@ -1,10 +1,7 @@
 # React Firebase Contact App
 Responsive contact app made using React and Firebase realtime database.
 
-<hr />
-
 ## What I Used
-
 - Firebase Authentication
 - Firebase Realtime Database
 - React Router Dom
