@@ -41,7 +41,7 @@ const List = () => {
                 ) : (
                   <img src={Man} alt="profile" width={50} />
                 )}
-                <div className="d-flex gap-2 w-100 justify-content-between">
+                <div className="d-flex gap-2 justify-content-between">
                   <div className="row">
                     <h6 className="mb-0">{item.username.toLowerCase()}</h6>
                     <p className="mb-0 opacity-75">{item.phoneNumber}</p>

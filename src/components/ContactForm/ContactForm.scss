@@ -1,27 +1,25 @@
 .contact-form {  
     font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
     label {
-        color: #72669b;
-        font-family: 'Oswald', sans-serif;  
+        color: #72669b;  
+        font-weight: 500;
     }
     input {  
-        outline-style: none !important;
-        box-shadow: 2px 2px 3px #5d5c5d8e;
+        outline-style: none !important; 
         border: none; 
+        font-size: .9rem !important;
         
-        &:hover { 
-            box-shadow: 2px 3px 3px #7b74a3;
+        &:hover {  
             outline-style: none !important;
             border: none !important;
             transition: all .5s;
         } 
     }
 
-    select { 
-        box-shadow: 2px 2px 3px #5d5c5d8e;
+    select {  
         border: none; 
-        &:hover { 
-            box-shadow: 2px 3px 3px #7b74a3;
+        &:hover {  
             outline-style: none !important;
             border: none !important;
             transition: all .5s;
