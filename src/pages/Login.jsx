@@ -18,30 +18,30 @@ const Login = () => {
   };
 
   return (
-    <div className="row col-12">
-      <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6> 
+    <div className="row col-12 p-5">
+      <h6 className="text-center fs-2 display-1 my-4 text-decoration-underline">Login</h6> 
     
-       <form onSubmit={handleLogin}>
+       <form onSubmit={handleLogin} className="auth-form shadow rounded p-4">
 
         <div className="mb-3 ">
           <label htmlFor="email" className="form-label mb-2"> Email address </label>
-          <input onChange={(e) => setEmail(e.target.value)} type="email" className="shadow form-control shadow-sm" id="email" required />
+          <input onChange={(e) => setEmail(e.target.value)} type="email" className="form-control shadow-sm p-2" id="email" required />
         </div>
 
         <div className="mb-3 ">
           <label htmlFor="password" className="form-label mb-2"> Password </label>
-          <input onChange={(e) => setPassword(e.target.value)} type="password" className="shadow form-control shadow-sm" id="password" required />
+          <input onChange={(e) => setPassword(e.target.value)} type="password" className="form-control shadow-sm p-2" id="password" required />
         </div>
 
         <div>
-          <p onClick={() => forgotPassword(email)}>Forgat Password ?</p>
-          <button type="submit" className="btn btn-login w-100 mb-2"> Login </button>
+          <p className="forgat" onClick={() => forgotPassword(email)}>Forgat Password ?</p>
+          <button type="submit" className="btn btn-auth w-100 mb-2"> Login </button>
         </div>
 
       </form>  
     
-      <div className="google-provider text-center">
-        <button onClick={handleProviderLogin} type="submit" className="btn btn-danger mb-3" > Continue with Google </button>
+      <div className="google-provider text-center p-3 my-2">
+        <button onClick={handleProviderLogin} type="submit" className="btn btn-danger shadow mb-3 w-100" > Continue with Google </button>
       </div>
     </div>
   );

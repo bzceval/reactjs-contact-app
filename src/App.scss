@@ -15,8 +15,49 @@ body {
 }
 .container {
   height: 500px !important;
+  width: 750px !important;
   .righCard {
     overflow-x: auto;
   }
 }
 
+.auth-form {  
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  label {
+      color: #72669b;  
+      font-weight: 500;
+  }
+  input {  
+      outline-style: none !important; 
+      border: none; 
+      font-size: .9rem !important;
+      
+      &:hover {  
+          outline-style: none !important;
+          border: none !important;
+          transition: all .5s;
+      } 
+  }
+
+  select {  
+      border: none; 
+      &:hover {  
+          outline-style: none !important;
+          border: none !important;
+          transition: all .5s;
+      }
+  }
+
+  .btn-auth {
+      background-color: #53547d !important;
+      color: #efecef !important;
+      border: none;
+      &:hover {
+         background-color: #7b74a3 !important;  
+      } 
+  }
+  .forgat {
+    cursor: pointer;
+  }
+}
