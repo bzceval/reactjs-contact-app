@@ -20,7 +20,6 @@ body {
     overflow-x: auto; 
   }
 }
-
 .auth-form {  
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -39,7 +38,6 @@ body {
           transition: all .5s;
       } 
   }
-
   select {  
       border: none; 
       &:hover {  
@@ -48,7 +46,6 @@ body {
           transition: all .5s;
       }
   }
-
   .btn-auth {
       background-color: #53547d !important;
       color: #efecef !important;
@@ -64,8 +61,7 @@ body {
 .home-description {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
-  line-height: 2rem;
-  color: rgba(0, 0, 0, 0.705);
+  line-height: 2rem; 
 }
 .auth-btn {
   background-color: #53547d !important;
@@ -74,7 +70,4 @@ body {
   &:hover {
      background-color: #7b74a3 !important;  
   }
-}
-h6 {
-  color: #53547d;
-}
+}  
