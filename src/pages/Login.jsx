@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="form-auth shadow rounded my-3 mt-5">
+    <div className="row col-12 ">
       <h6 className="text-center fs-2 display-1 my-4 pt-4 text-decoration-underline">Login</h6>
     
       <form onSubmit={handleLogin}>
