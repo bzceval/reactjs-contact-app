@@ -13,7 +13,7 @@ const ContactForm = ({ info, setInfo, handleSubmit }) => {
     setInfo({ ...info, [name]: value });
   };
   return (
-    <form onSubmit={handleSubmit} className="contact-form shadow rounded p-2" >
+    <form onSubmit={handleSubmit} className="contact-form shadow rounded p-3" >
       <div className="mb-3 pt-3 mx-3">
         <label htmlFor="username" className="form-label mb-1"> Fullname </label>
         <input onChange={handleChange} name="username" value={info.username} type="text" className="shadow-sm form-control p-2" id="username" />
@@ -33,9 +33,10 @@ const ContactForm = ({ info, setInfo, handleSubmit }) => {
         </select>
       </div>
 
-      <div className="mb-3 d-grid mt-4 mx-3">
+      <div className="mb-3 d-grid mt-4 mx-4">
         <button type="submit" className="btn btn-primary">Add Contact</button>
       </div>
+      
     </form>
      
   );
