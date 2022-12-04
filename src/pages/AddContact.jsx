@@ -15,7 +15,7 @@ const AddContact = () => {
   };
 
   return (
-    <div className="addContact container p-5 pb-0">
+    <div className="row addContact p-5 pb-0 col-12">
       <h6 className="text-center fs-2 display-1 mb-4 mt-3 text-decoration-underline">
         Add Contact
       </h6>

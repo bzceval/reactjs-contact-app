@@ -22,8 +22,8 @@ const List = () => {
   // console.log(editItem)
 
   return (
-    <div className="contact-list">
-      <div className="container">
+    <>
+      <div className="contact-list">
         {isLoading ? (
           <div className="d-flex justify-content-center">
             <div className="spinner-border" role="status">
@@ -34,7 +34,7 @@ const List = () => {
           <NoFetched />
         ) : (
           contactList?.map((item) => (
-            <div key={item.id} className="list-group w-auto mb-3 mt-3">
+            <div key={item.id} className="list-group mb-3 mt-3">
               <div className="list-group-item list-group-item-action d-flex gap-3">
                 {item.gender === "female" ? (
                   <img src={Girl} alt="profile" width={50} />
@@ -81,7 +81,7 @@ const List = () => {
           setShowModal={setShowModal}
         />
       </div>
-    </div>
+    </>
   );
 };
 

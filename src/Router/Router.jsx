@@ -13,11 +13,11 @@ import HomePage from "../pages/HomePage";
 const Router = () => {
   return (
     <BrowserRouter>
-      <div className="col-12 card shadow">
-        <div className="col-4 leftCard">
+      <div className="container d-flex shadow ">
+        <div className="col-3 col-xs-2 col-sm-2 leftCard">
           <Sidebar />
         </div>
-        <div className="col righCard">
+        <div className="col-9 col-xs-10 col-sm-10 righCard">
           <Routes>
             <Route path="/" element={<Home />}>
               <Route path="" element={<HomePage />} />
